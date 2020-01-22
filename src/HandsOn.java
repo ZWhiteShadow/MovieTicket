@@ -34,7 +34,7 @@ public class HandsOn {
 				input.close();
 				return;
 			}
-			input.close();
+
 			Scanner input2 = new Scanner(System.in);
 			System.out.print("You are a student. true/false: ");
 			boolean isStudent = input2.nextBoolean();
@@ -47,6 +47,7 @@ public class HandsOn {
 				System.out.print(ticket[1][2] + " price: ");
 			}
 			input2.close();
+			input.close();
 			System.out.println("You pay: $" + price);
 
 		} else {
